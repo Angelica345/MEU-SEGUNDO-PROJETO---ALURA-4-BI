@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Segredos da Mansão Sombria</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.webp" alt="Fachada da Mansão Sombria">
+            <p>Você é um investigador particular contratado para desvendar o mistério da Mansão Sombria. Dizem que o último dono, um excêntrico milionário, desapareceu sem deixar rastros. Ao entrar na mansão, você sente o peso dos segredos que ela esconde.</p>
+            <button class="btn-proximo" data-proximo="1">Investigar a sala de estar</button>
+            <button class="btn-proximo" data-proximo="2">Subir as escadas para o andar superior</button>
+        </div>
+        
+        <div class="passo" id="passo-1">
+            <img src="cenario-passo1.jfif" alt="Sala de estar da mansão">
+            <p>Na sala de estar, você encontra um retrato antigo do dono da mansão. Ao lado, uma lareira apagada e um relógio parado às 3:15. Algo neste horário parece importante.</p>
+            <button class="btn-proximo" data-proximo="3">Examinar a lareira</button>
+            <button class="btn-proximo" data-proximo="4">Anotar o horário e continuar</button>
+        </div>
+        
+        <div class="passo" id="passo-2">
+            <img src="cenario-passo2.jpg" alt="Corredor escuro do andar superior">
+            <p>Ao subir as escadas, você se depara com um longo corredor com várias portas. Cada uma parece ter um mistério. Qual porta escolher?</p>
+            <button class="btn-proximo" data-proximo="5">Entrar na primeira porta à esquerda</button>
+            <button class="btn-proximo" data-proximo="6">Entrar na última porta à direita</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="cenario-passo3.jpg" alt="Lareira com uma passagem secreta">
+            <p>Ao examinar a lareira, você encontra uma alavanca oculta. Ao puxá-la, uma passagem secreta se abre, revelando uma escada que desce para um porão.</p>
+            <button class="btn-proximo" data-proximo="7">Descer pela passagem secreta</button>
+            <button class="btn-proximo" data-proximo="1">Ignorar a passagem e continuar a investigação na sala de estar</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="cenario-passo4.jpg" alt="Relógio antigo da mansão">
+            <p>Você anota o horário 3:15. Talvez seja uma pista importante. Ao observar mais de perto, percebe um bilhete escondido atrás do relógio.</p>
+            <button class="btn-proximo" data-proximo="8">Ler o bilhete</button>
+            <button class="btn-proximo" data-proximo="2">Ir para o andar superior</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="cenario-passo5.jpg" alt="Quarto antigo com uma carta sobre a mesa">
+            <p>Você entra em um quarto antigo e encontra uma carta escrita pelo dono da mansão, mencionando alguém chamado "V.". A carta termina abruptamente, mas indica que algo valioso foi escondido no jardim.</p>
+            <button class="btn-proximo" data-proximo="9">Investigar o jardim</button>
+            <button class="btn-proximo" data-proximo="6">Ir para a última porta do corredor</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="cenario-passo6.jpg" alt="Biblioteca da mansão">
+            <p>A última porta leva você à biblioteca. Prateleiras cheias de livros antigos cobrem as paredes. Um livro parece fora do lugar.</p>
+            <button class="btn-proximo" data-proximo="10">Puxar o livro</button>
+            <button class="btn-proximo" data-proximo="11">Procurar pistas em outro lugar</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="cenario-passo7.jpg" alt="Porão sombrio com um cofre antigo">
+            <p>Descendo pela passagem, você chega ao porão, onde encontra um cofre antigo. No entanto, ele está trancado e parece precisar de uma combinação.</p>
+            <button class="btn-proximo" data-proximo="12">Tentar o horário 3:15 como combinação</button>
+            <button class="btn-proximo" data-proximo="4">Voltar para investigar o relógio</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="cenario-passo8.jpg" alt="Bilhete misterioso">
+            <p>O bilhete diz: "O segredo está no que ele mais amava... a biblioteca". Talvez a biblioteca tenha algo escondido que revele o mistério.</p>
+            <button class="btn-proximo" data-proximo="6">Ir para a biblioteca</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="images.jfif" alt="Jardim da mansão">
+            <p>No jardim, você encontra uma estátua com uma caixa de metal enterrada perto da base. A caixa está trancada com um cadeado de combinação.</p>
+            <button class="btn-proximo" data-proximo="12">Usar 3:15 como combinação</button>
+            <button class="btn-proximo" data-proximo="2">Retornar ao corredor para continuar a busca</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="cenario-passo10.jpg" alt="Livro com um compartimento secreto">
+            <p>Ao puxar o livro, um compartimento secreto se abre, revelando um diário do dono da mansão. As últimas páginas indicam que ele estava escondendo algo importante no porão.</p>
+            <button class="btn-proximo" data-proximo="7">Ir para o porão</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="cenario-passo11.jpg" alt="Salão principal">
+            <p>Você retorna ao salão principal, mas a sensação de mistério ainda permanece. Talvez precise investigar mais a fundo.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar para o início e recomeçar a busca</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="cenario-final.jfif" alt="Tesouro encontrado">
+            <p>A combinação funciona! Dentro do cofre, você encontra documentos revelando que o dono da mansão havia escondido segredos valiosos sobre sua fortuna. Parabéns, você solucionou o mistério!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
